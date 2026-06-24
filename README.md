@@ -13,6 +13,11 @@ The website consists of multiple full-screen sections where background and foreg
 The objective of this project is to demonstrate how modern web technologies can be used to build interactive, responsive, and visually appealing web experiences using parallax scrolling techniques.
 
 ---
+## Live Demo
+
+https://parallex-scrolling.vercel.app/
+
+---
 
 ## Key Features
 
