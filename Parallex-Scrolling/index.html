@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Parallax Journey </title>
+  <link rel="stylesheet" href="style.css" />
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Inter:wght@300;400;500;600&display=swap"
+    rel="stylesheet"
+  />
+  <!-- GSAP CDN -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" defer></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js" defer></script>
+</head>
+<body>
+
+  <!-- ========== CANVAS FOR PARTICLE STARS ========== -->
+  <canvas id="starCanvas"></canvas>
+
+  <nav class="navbar" id="navbar">
+    <div class="nav-logo">PARALLAX<span>X</span></div>
+    <ul class="nav-links">
+      <li><a href="#hero">Home</a></li>
+      <li><a href="#about">Journey</a></li>
+      <li><a href="#features">Features</a></li>
+      <li><a href="#tech">Technology</a></li>
+      <li><a href="#launch">Launch</a></li>
+    </ul>
+    <div class="nav-toggle" id="navToggle" aria-label="Toggle menu">
+      <span></span><span></span><span></span>
+    </div>
+  </nav>
+
+  <!-- ========== SECTION 1 — HERO ========== -->
+  <section class="section" id="hero">
+
+    <!-- Parallax background layers -->
+    <div class="parallax-layer layer-bg"   data-speed="-0.15"></div>
+    <div class="parallax-layer layer-mid"  data-speed="-0.30"></div>
+    <div class="parallax-layer layer-fore" data-speed="-0.50"></div>
+
+    <!-- Floating orbs -->
+    <div class="orb orb-1"></div>
+    <div class="orb orb-2"></div>
+    <div class="orb orb-3"></div>
+
+    <div class="section-content hero-content">
+      <div class="hero-eyebrow reveal-up">Parallex Scrolling · Web Design Project</div>
+      <h1 class="hero-title">
+        Scroll Through<br />
+        <span class="gradient-text">Dimensions</span>
+      </h1>
+      <p class="hero-sub reveal-up">
+        An immersive parallax journey where every scroll tells a story.<br />
+        Built with HTML, CSS, JavaScript &amp; GSAP.
+      </p>
+      <a href="#about" class="btn-primary reveal-up">Begin the Journey</a>
+
+      <!-- Scroll indicator -->
+      <div class="scroll-indicator reveal-up">
+        <div class="scroll-line"></div>
+        <span>SCROLL</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== SECTION 2 — ABOUT ========== -->
+  <section class="section section-dark" id="about">
+    <div class="parallax-layer layer-about-bg" data-speed="-0.20"></div>
+
+    <div class="section-content about-grid">
+      <div class="about-text">
+        <div class="section-label reveal-left">The Concept</div>
+        <h2 class="section-title reveal-left">
+          Depth Without<br /><span class="gradient-text">Limits</span>
+        </h2>
+        <p class="section-body reveal-left">
+          Parallax scrolling creates the illusion of depth by moving foreground and
+          background layers at different rates. This project transforms a static webpage
+          into an immersive narrative where scrolling becomes exploration.
+        </p>
+        <p class="section-body reveal-left">
+          Every layer, every element, every transition is intentional designed to
+          guide your eye and hold your attention.
+        </p>
+      </div>
+
+      <div class="about-visual reveal-right">
+        <div class="depth-diagram">
+          <div class="depth-layer dl-back">Background Layer</div>
+          <div class="depth-layer dl-mid">Middle Layer</div>
+          <div class="depth-layer dl-front">Foreground Layer</div>
+          <div class="depth-arrow">→ Scroll</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== SECTION 3 — FEATURES ========== -->
+  <section class="section" id="features">
+    <div class="parallax-layer layer-features-bg" data-speed="-0.10"></div>
+
+    <div class="section-content">
+      <div class="section-label text-center reveal-up">What's Inside</div>
+      <h2 class="section-title text-center reveal-up">
+        Key <span class="gradient-text">Features</span>
+      </h2>
+
+      <div class="features-grid">
+
+        <div class="feature-card reveal-up" data-delay="0">
+          <div class="feature-icon">◈</div>
+          <h3>Multi-Layer Parallax</h3>
+          <p>Background, midground, and foreground elements move at distinct speeds, creating true three-dimensional depth on a flat screen.</p>
+        </div>
+
+        <div class="feature-card reveal-up" data-delay="0.1">
+          <div class="feature-icon">⟳</div>
+          <h3>Scroll-Triggered Animations</h3>
+          <p>Elements animate into view precisely as you reach them powered by GSAP ScrollTrigger for frame-perfect timing.</p>
+        </div>
+
+        <div class="feature-card reveal-up" data-delay="0.2">
+          <div class="feature-icon">◉</div>
+          <h3>Particle System</h3>
+          <p>A dynamic canvas-based star field responds to your scroll velocity, adding a living, breathing atmosphere to the experience.</p>
+        </div>
+
+        <div class="feature-card reveal-up" data-delay="0">
+          <div class="feature-icon">⬡</div>
+          <h3>Responsive Design</h3>
+          <p>Fluid layouts and adaptive parallax intensities ensure the experience looks and feels great on every device size.</p>
+        </div>
+
+        <div class="feature-card reveal-up" data-delay="0.1">
+          <div class="feature-icon">▲</div>
+          <h3>Smooth Transitions</h3>
+          <p>Section transitions use GSAP timelines with eased motion curves , no janky jumps, only fluid cinematic movement.</p>
+        </div>
+
+        <div class="feature-card reveal-up" data-delay="0.2">
+          <div class="feature-icon">✦</div>
+          <h3>Performance Optimised</h3>
+          <p>requestAnimationFrame loops, will-change hints, and debounced resize listeners keep every animation silky at 60 fps.</p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== SECTION 4 — TECHNOLOGY ========== -->
+  <section class="section section-dark" id="tech">
+    <div class="parallax-layer layer-tech-bg" data-speed="-0.25"></div>
+
+    <div class="section-content">
+      <div class="section-label text-center reveal-up">Under the Hood</div>
+      <h2 class="section-title text-center reveal-up">
+        Technologies <span class="gradient-text">Used</span>
+      </h2>
+
+      <div class="tech-grid">
+        <div class="tech-item reveal-up" data-delay="0">
+          <div class="tech-bar-wrap">
+            <span class="tech-name">HTML5</span>
+            <span class="tech-pct">95%</span>
+          </div>
+          <div class="tech-bar"><div class="tech-fill" data-width="95"></div></div>
+        </div>
+
+        <div class="tech-item reveal-up" data-delay="0.05">
+          <div class="tech-bar-wrap">
+            <span class="tech-name">CSS3 &amp; Animations</span>
+            <span class="tech-pct">90%</span>
+          </div>
+          <div class="tech-bar"><div class="tech-fill" data-width="90"></div></div>
+        </div>
+
+        <div class="tech-item reveal-up" data-delay="0.10">
+          <div class="tech-bar-wrap">
+            <span class="tech-name">JavaScript (ES6+)</span>
+            <span class="tech-pct">88%</span>
+          </div>
+          <div class="tech-bar"><div class="tech-fill" data-width="88"></div></div>
+        </div>
+
+        <div class="tech-item reveal-up" data-delay="0.15">
+          <div class="tech-bar-wrap">
+            <span class="tech-name">GSAP / ScrollTrigger</span>
+            <span class="tech-pct">85%</span>
+          </div>
+          <div class="tech-bar"><div class="tech-fill" data-width="85"></div></div>
+        </div>
+
+        <div class="tech-item reveal-up" data-delay="0.20">
+          <div class="tech-bar-wrap">
+            <span class="tech-name">Responsive Web Design</span>
+            <span class="tech-pct">92%</span>
+          </div>
+          <div class="tech-bar"><div class="tech-fill" data-width="92"></div></div>
+        </div>
+
+        <div class="tech-item reveal-up" data-delay="0.25">
+          <div class="tech-bar-wrap">
+            <span class="tech-name">Canvas API</span>
+            <span class="tech-pct">80%</span>
+          </div>
+          <div class="tech-bar"><div class="tech-fill" data-width="80"></div></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== SECTION 5 — LAUNCH / CTA ========== -->
+  <section class="section" id="launch">
+    <div class="parallax-layer layer-launch-bg" data-speed="-0.35"></div>
+
+    <!-- Floating geometry -->
+    <div class="geo geo-1"></div>
+    <div class="geo geo-2"></div>
+    <div class="geo geo-3"></div>
+
+    <div class="section-content launch-content">
+      <div class="section-label text-center reveal-up">Mission Complete</div>
+      <h2 class="section-title text-center reveal-up">
+        Ready to <span class="gradient-text">Launch?</span>
+      </h2>
+      <p class="section-body text-center reveal-up">
+        This project demonstrates how modern web technologies can be woven together
+        to create digital experiences that captivate, engage, and inspire.
+      </p>
+
+      <div class="launch-stats reveal-up">
+        <div class="stat">
+          <div class="stat-number" data-count="5">0</div>
+          <div class="stat-label">Parallax Layers</div>
+        </div>
+        <div class="stat">
+          <div class="stat-number" data-count="6">0</div>
+          <div class="stat-label">Key Features</div>
+        </div>
+        <div class="stat">
+          <div class="stat-number" data-count="60">0</div>
+          <div class="stat-label">FPS Target</div>
+        </div>
+        <div class="stat">
+          <div class="stat-number" data-count="3">0</div>
+          <div class="stat-label">Core Files</div>
+        </div>
+      </div>
+
+      <div class="launch-cta reveal-up">
+        <a href="#hero" class="btn-primary">Restart Journey</a>
+        <a href="#about" class="btn-ghost">Learn More</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== FOOTER ========== -->
+  <footer class="footer">
+    <div class="footer-inner">
+      <div class="footer-logo">PARALLAX<span>X</span></div>
+      <p>Interactive Parallax Scrolling Page</p>
+      <p class="footer-sub">Built with HTML5 · CSS3 · JavaScript · GSAP</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
