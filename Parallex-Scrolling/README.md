@@ -53,15 +53,16 @@ parallax-project/
 
 ### Hero Section
 
-![Screenshot](screenshot(1).png)
+![Hero](Screenshot%20(3).png)
+
+
 ### Features Section
 
-![Features](screenshots/features.png)
+![Features](Screenshot%20(2).png)
 
 ### Technology Section
 
-![Technology](screenshots/tech.png)
-
+![Technology](Screenshot%20(1).png)
 ---
 
 ## Core Functional Modules
