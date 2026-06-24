@@ -55,11 +55,6 @@ parallax-project/
 
 ![Hero](Screenshot%20(3).png)
 
-
-### Features Section
-
-![Features](Screenshot%20(2).png)
-
 ### Technology Section
 
 ![Technology](Screenshot%20(1).png)
