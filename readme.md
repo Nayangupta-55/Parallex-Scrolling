@@ -53,7 +53,7 @@ parallax-project/
 
 ### Hero Section
 
-![Hero](screenshots/hero.png)
+![Hero](screenshot(1).png)
 
 ### Features Section
 
