@@ -57,7 +57,7 @@ parallax-project/
 
 ### Technology Section
 
-![Technology](Screenshot%20(1).png)
+![Technology](Screenshot%20(2).png)
 ---
 
 ## Core Functional Modules
